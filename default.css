@@ -298,12 +298,32 @@ h6 { font-size: 16px;}
 .social-links{
     align-content: center;
     text-align: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
 #social_img{
-    width: 8%;
+    width: 10%;
 }
 
+#github_img{
+    width: 10%;
+}
+
+#resume_img{
+    width: 23%;
+}
+
+
+.two_column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper'
+        'resume cv'
+    ;
+}
 
 .post-wrapper{
     display: grid;
