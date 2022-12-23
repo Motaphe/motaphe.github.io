@@ -46,11 +46,50 @@
                     <p><a target="_blank" href="https://github.com/Motaphe/Python_Projects/tree/main/twitter_bot">Code</a></p>
                     <p><a target="_blank" href="https://www.youtube.com/watch?v=OMUx9HyxnLg&feature=youtu.be">A Video Explaining the Project</a></p>
 
-                    <p>&nbsp&nbsp&nbsp&nbspI built a Python bot that scrapes the Astronomy Picture of the Day using NASA’s APOD API and posts them to
-                        Twitter using the requests library.</p>
+                    <h1>NASA APOD (Astronomy Picture of the Day) Twitter Bot</h1>
 
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
+                    <p>This Python script uses the <a href="https://api.nasa.gov/api.html#apod">NASA APOD API</a> to retrieve the "Astronomy Picture of the Day" and posts it to Twitter. It also includes functionality to handle both image and video media types.</p>
+
+                    <h2>Prerequisites</h2>
+                    
+                    <ul>
+                      <li>Python 3</li>
+                      <li>The following Python modules:
+                        <ul>
+                          <li><code>requests</code></li>
+                          <li><code>requests_oauthlib</code></li>
+                          <li><code>json</code></li>
+                          <li><code>shutil</code></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    
+                    <h2>Setup</h2>
+                    
+                    <ol>
+                      <li>Replace the placeholder values in the script with your own <a href="https://developer.twitter.com/en/docs/twitter-api">Twitter API</a> and <a href="https://api.nasa.gov/index.html#apply-for-an-api-key">NASA API</a> keys:
+                        <ul>
+                          <li><code>CLIENT_ID</code></li>
+                          <li><code>CLIENT_SECRET</code></li>
+                          <li><code>TOKEN_KEY</code></li>
+                          <li><code>TOKEN_SECRET</code></li>
+                          <li><code>NASA_API</code></li>
+                        </ul>
+                      </li>
+                      <li>Run the script using <code>python3 nasa_apod_twitter_bot.py</code></li>
+                    </ol>
+                    
+                    <h2>How it works</h2>
+                    
+                    <p>The script follows these steps:</p>
+                    
+                    <ol>
+                      <li>Makes a GET request to the NASA APOD API to retrieve the "Astronomy Picture of the Day" data</li>
+                      <li>Downloads the image or video thumbnail (depending on the media type)</li>
+                      <li>Uploads the image or video to Twitter's media upload endpoint to get a media ID</li>
+                      <li>Posts the media ID and title of the "Astronomy Picture of the Day" to Twitter's status update endpoint</li>
+                    </ol>
+                    
+                                    </div>
+                                </div
+                    
